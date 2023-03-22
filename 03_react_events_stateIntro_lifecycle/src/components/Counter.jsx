@@ -20,15 +20,21 @@ const Counter = () => {
         setCount(count - 1);
     }
     const handleChange = (howMuch) => {
-        // du vienoje funkcijoje
+        // 3 vienoje funkcijoje
+        if (howMuch === 'reset') {
+            setCount(0)
+            return
+        } 
         setCount(count + howMuch)
+        
 
     }
-    const handleReset = () => {
-        // reset
-        setCount(0)
+    // reset
+    // const handleReset = () => {
+    //     // reset
+    //     setCount(0)
 
-    }
+    // }
 
     return (
      <UiCard>
@@ -38,7 +44,7 @@ const Counter = () => {
         <button onClick={handleDecrement}>Minus</button>
         <button onClick={() => handleChange(5)}>Add 5</button>
         <button onClick={() => handleChange(10)}>Add 10</button>
-        <button onClick={handleReset}>Reset Counter</button>
+        <button onClick={() => handleChange('reset')}>Reset Counter</button>
      </UiCard>
     )
 }
