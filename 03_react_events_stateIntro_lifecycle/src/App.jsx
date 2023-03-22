@@ -21,10 +21,12 @@ const App = () => {
   return (
     <div>
       <Header />
-      {/* <h1>App</h1>
+      <h1>App</h1>
       <CardList list={arr} />
-      <button onClick={handleClick} >Show alert</button> */}
+      <button onClick={handleClick} >Show alert</button>
+      {/* <Counter />
       <Counter />
+      <Counter /> */}
     </div>
   );
 };

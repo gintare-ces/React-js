@@ -4,7 +4,6 @@ const CardList = (props) => {
     console.log('CardLis ivyko');
   return (
     <div>
-      CardList
       <Card color={props.list[0]}/>
       <Card />
       <Card />

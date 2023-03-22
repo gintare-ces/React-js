@@ -38,7 +38,7 @@ const Counter = () => {
 
     return (
      <UiCard>
-        <h3>Counter</h3>
+        <h3 >Counter</h3>
         <h2>{count}</h2>
         <button onClick={handleIncrement}>Plus</button>
         <button onClick={handleDecrement}>Minus</button>
