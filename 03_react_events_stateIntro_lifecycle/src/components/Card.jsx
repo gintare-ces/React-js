@@ -1,7 +1,7 @@
 
-const Card = () => {
+const Card = (props) => {
     console.log('Card ivyko');
-    return <article>Card</article>;
+    return <article>Card {props.color}</article>;
     
   };
   export default Card;
