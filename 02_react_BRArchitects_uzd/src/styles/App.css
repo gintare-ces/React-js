@@ -1,0 +1,148 @@
+.gridThree {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 8px 0 #3e3e3e;
+  position: sticky;
+}
+.navLink,
+.logo {
+  padding: 0.5em 1em;
+  display: inline-block;
+}
+.navLink:hover,
+.logo:hover {
+  background-color: #b8b8b8;
+}
+
+/* HERO ========================== */
+
+.hero {
+  background: url('/img/architect.jpg') no-repeat bottom;
+  background-size: cover;
+  padding: 200px 0;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 50px;
+  color: #fff;
+}
+.h1-span {
+  background-color: #0009;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+/* Projects section  */
+
+.section-title {
+  border-bottom: 1px solid #f1f1f1;
+  padding: 16px 0;
+  font-weight: normal;
+}
+
+.projects {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.img-box {
+  width: 245px;
+  height: 170px;
+  position: relative;
+  display: inline-block;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-title {
+  font-weight: normal;
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* right: 0; */
+}
+
+/* row 2 with bg */
+.img-box-bg {
+  width: 245px;
+  height: 170px;
+  display: inline-block;
+  background: url('/img/house1.jpeg') no-repeat;
+  background-size: cover;
+}
+.img-title-bg {
+  font-weight: normal;
+  background-color: #333;
+  color: white;
+  padding: 8px 16px;
+  display: inline-block;
+}
+/* patys paveiksleliai atitinkamai dezutei */
+#h2 {
+  background-image: url('/img/house4.jpg');
+}
+#h3 {
+  background-image: url('/img/house3.jpg');
+}
+#h4 {
+  background-image: url('/img/house2.jpg');
+}
+
+/* islygiuoti vertikaliai */
+.img-box-bg,
+.img-box {
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+br {
+  color: #4e4e4e;
+}
+
+/* UI */
+
+.container {
+  /* apridboti tik maximalu ploti */
+  max-width: 1000px;
+  /* skaiciuoti parastes automatiskai vienodai is kaires ir is desines */
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.flex {
+  display: flex;
+}
+.spaceBetween {
+  justify-content: space-between;
+  align-items: center;
+}
