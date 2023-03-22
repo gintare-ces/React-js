@@ -1,6 +1,6 @@
-const Person = () => {
+const Person = (props) => {
     return (
-        <li>One li</li>
+        <li style={{backgroundColor: props.name}}>{props.name}</li>
         
     )
 }

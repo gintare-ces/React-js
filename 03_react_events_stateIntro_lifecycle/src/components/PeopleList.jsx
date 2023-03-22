@@ -1,12 +1,13 @@
 import Person from "./Person"
 
-const PeopleList = () => {
+const PeopleList = (props) => {
+    // mapinti per gauta sarasa ir gaminti Person componentus
+    
     return (
         <ul>
-           <Person />
-           <Person />
-           <Person />
-           <Person />
+            {props.list.map((color) => (
+            <Person key={color} name={color} />))}
+           
         </ul>
     )
 }
